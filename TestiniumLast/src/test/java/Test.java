@@ -29,7 +29,7 @@ public class Test {
 
     @org.junit.Test
     public  void testing() throws InterruptedException {
-        enterence("omeranac12@gmail.com","18021995");
+        enterence("WirteEmail","WritePasword");
         Thread.sleep(2000);
         searching("bilgisayar");
         Thread.sleep(2000);
@@ -58,9 +58,6 @@ public class Test {
 
         var buttonSgnIn= chromeDriver.findElement(new By.ByCssSelector(".qjixn8-0[data-cy='header-login-button']"));
         buttonSgnIn.click();//Sign in yapar
-
-        //String email="omeranac12@gmail.com";
-        //String psw="18021995";
 
         chromeDriver.findElement(By.id("L-UserNameField")).sendKeys(email);
         Thread.sleep(2000);
